@@ -1,0 +1,36 @@
+Blackjack Class : defines the game operation of BlackJack
+
+typedef vector<BlackJackHand*> vpBHand : pointer vector of BlackJackHand
+typedef vector<CardDeck*> vpDeck : pointer vector of CardDeck
+
++BlackJack() :
++~BlackJack() :
+
++virtual void rungame(Player* p) : starts the game
++virtual string getGameName() : returns name of game
+
++int getBankRoll() const : returns player's bankroll
++int getDeckCount() const : returns the number of deck
++int getHandsCount() const : returns the number of player hands
++Hand* getDealerHand() const : returns dealer's hand
++Hand* getPlayerHand(int i) const : returns player's ith hand
++vpBHand* getPlayerHands() const : returns the vector of player's hand
+
++void setDeckCount(const int& i) : sets the number of deck
++void setHandsCount(const int& i) : sets the number of player hands
+
++void deal(BlackJackHand*& h) : deal a card to the hand h
++void deal(BlackJackHand*& h, const int& i) : deal i cards to the hand h
++void evaluate(BlackJackHand*& h) : evaluate if the hand is winning hand against the dealer
++void reset() : resets all hands
++void resetDeck() : resets all the decks
++void resetGame() : resets the BlackJack game object
+
+-string _gameName : name of the game
+-BlackJackHand* _dealerHand : dealer's hand
+-vpHand* _playerHand : vector of player's hand (could be multiple)
+-int _bankroll : player's bankroll
+-CardDeck* _deck : decks in the game
+-int _cardleft : how many cards left in the whole deck
+
+-void cleanup() : helper function - cleanup

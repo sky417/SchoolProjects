@@ -1,0 +1,22 @@
+CardDeck class : Deck of card
+
+struct Card = { Suits suit, CardNumber number }
+
++CardDeck() : reset all cards available. no other params
+
++Card getRandomCard() : a random card from the remaining cards
+
++int getCount() const : how many cards left
+
++void reset() : reset to all 52 cards remaining
+
++string toString() : human readable output
+
+
+-bool[][] cards : contains info if which card is remaining (2D array)
+-int cardCount : number of cards left in the deck
+-string deckID : serial ID of the deck
+
+-static const int CARD_COUNT = 52 : 52 cards total
+-static int deck_count : tracks how many decks there are
+

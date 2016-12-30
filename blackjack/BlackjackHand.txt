@@ -1,0 +1,36 @@
+BlackjackHand class : blackjack-specified hand
+
+enum Cond {Lose, Push, Win} : three conditions of game - win, lose, push
+
++BlackjackHand() : initialize all the member variable
+
++bool isBlackjack() const : check if the hand is blackjack
++bool isBust() const : check if the hand is bust
++bool isSoft() const : check if the hand is soft
++int getBet() const : returns the bet amount
++int getInsurance() const : returns the insurance amount
++Cond isWin() const : check if the winning hand
++int getSum() const : returns the sum of hand
++bool isDoubleDown() const : check if the hand is doubled down
++bool isPaid() const : check if the hand is already paid
+
++void setBet(const int& i) : sets the bet for the hand
++void setInsurance(const int& i) : sets the insurance for the hand
++void setWin(const Cond& c) : sets the winning status of the hand
++void setDoubleDown(const bool& b) : sets double down status
++void setPaid(const bool& b) : sets the paid status
+
++virtual void addCard(const Card& c) : in addition to the regular Hand::addCard(), check softness/blackjack/bust 
++virtual void clearCard() : in addition to Hand::clearCard(), reset all the parameters
+
++virtual string toString() : human readable output
+
+-int _sum : sum of the cards
+-bool _blackjack : if the hand is blackjack hand
+-bool _bust : if the hand is bust hand
+-int _acecount : how many aces in the hand
+-int _bet : amount of the bet
+-int _insurance : amount of the insurance
+-Cond _win : if the hand is a winning hand
+-bool _doubledown : if the hand is double down hand
+-bool _paid : if the hand is already paid

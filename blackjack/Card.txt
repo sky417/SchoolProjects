@@ -1,0 +1,19 @@
+Card class : everything with card
+
+enum Suits {Spade, Diamond, Heart, Clubs}
+enum CardNumber {Ace=1, Two, ..... , Queen, King}
+
++Card()
++Card(const Suits& s, const CardNumber& n) : make specified card
+
++void setSuit(const Suits& s) : set suit to s
++void setNumber(const CardNumber& n) : set number to n
+
++Suits getSuit() : returns the suit
++CardNumber getNumber() : returns the number
+
++string toString() : human readable output
++static string intToString(const int& i) : helper function, integer to string
+
+-Suits _suit : suit of the card
+-CardNumber _number : number of the card

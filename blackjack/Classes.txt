@@ -1,0 +1,13 @@
+Brief description of classes 
+
+Card : has suit, number. has static function intToString()
+CardDeck : contains 52 cards. track what cards are left
+Hand : contains card(s). cards can be added with addCard(c)
+BlackJackHand : blackjack specific hand object. has member variables/functions that is useful for blackjack.
+BlackJack : handles everything of blackjack game
+
+
+----------------------------
+From assignment 1
+
+Game, Player, WordJumble, DummyGame classes

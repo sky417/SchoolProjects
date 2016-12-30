@@ -1,0 +1,17 @@
+Hand class : hand object for player and dealer
+
+typedef vector<Card> vCard
+
++Hand() : reset the vector of cards
++virtual ~Hand() : destructor
+
++int cardCount() const : returns how many cards in the hand
++virtual void addCard(const Card& c) : adds a card to the hand
++virtual void clearCard() : clear all the cards in the hand
+
++virtual string tostring() : human readable output
+
+-vCard* _cards : vector of cards the hand containing
+-int _counts : the number of cards in the hand
+
+-void cleanup() : helper function - destructor
